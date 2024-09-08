@@ -17,6 +17,44 @@ function changeHeader(){
 
 changeHeader();
 
+function backToUp(){
+    window.addEventListener("scroll", function () {
+        let derniere_position_de_scroll_connue = window.scrollY;
+        const scrollToTop = document.querySelector('.scroll-to-top');
+        if(derniere_position_de_scroll_connue > 200){
+            scrollToTop.style.opacity = '1';
+        }else{
+            scrollToTop.style.opacity = '0';
+        }
+    })
+}
+
+backToUp();
+
+function handleScroll() {
+    window.addEventListener("scroll", function () {
+        const scrollToTop = document.querySelector('.scroll-to-top');
+        const footerHeight = document.querySelector('footer').offsetHeight;
+
+        // Hauteur totale de la page
+        const scrollHeight = document.documentElement.scrollHeight;
+        
+        // Position actuelle de défilement
+        const scrollTop = window.scrollY;
+        
+        // Si l'utilisateur est proche du bas de la page
+        if (scrollTop + window.innerHeight >= scrollHeight - (footerHeight - 50)) {
+            scrollToTop.style.color = "rgb(247, 247, 247)";
+        } else {
+            scrollToTop.style.color = "#292929";
+        }
+    })
+}
+
+handleScroll();
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     let link = document.querySelector('.presentation__content a');
 
