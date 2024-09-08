@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Amigo - Développeuse web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+	integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./assets/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav scrollTop">
+            <img src="./assets/images/logo-black-no-background.png">
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation">
+            <div class="presentation__overlay">
+                <div class="presentation__content" id="presentation__content">
+                    <p class="light">Venez découvrir mon portfolio</p>
+                    <h1>Développeuse Web Passionnée</h1>
+                    <a href="#about" class="light">Explorer plus</a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2 class="section-title about-title">À propos de<br> moi</h2>
+                <div class="about-paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, corrupti consequatur dolore delectus doloremque, magni, itaque repellendus reprehenderit tempora earum eaque quidem commodi! Labore, dolorum cum perferendis quas molestias earum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, corrupti consequatur dolore delectus doloremque, magni, itaque repellendus reprehenderit tempora earum eaque quidem commodi! Labore, dolorum cum perferendis quas molestias earum?</p></div>
+                <div class="about-info">
+                    <img src="./assets/images/maria_amigo.jpg">
+                    <p><strong>Développeuse</strong> web <br><strong>Formation OpenClassrooms</strong> en alternance</p>
+                </div>
+            </div>
+            <img src="./assets/images/development.jpg">
+        </section>
+        <section class="services" id="services">
+            <h2 class="section-title services-title">Mes services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Développement JavaScript</h3>
+                </div>
+                <div class="service">
+                    <h3>Développement NodeJS</h3>
+                </div>
+                <div class="service">
+                    <h3>Développement <br>Full-Stack</h3>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="section-title skills-title">Mes compétences</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML - CSS</h3>
+                    <p>Intégrer du contenu conformément à une maquette<br>
+                    Implémenter une interface responsive</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h3>Optimisation et debug</h3>
+                    <p>Optimisation des performances d’un site web<br>
+                        Débugger un site web grâce aux Chrome DevTools<br>
+                        Rédiger un cahier de recette pour tester un site</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Manipuler les éléments du DOM <br>
+                        Récupérer les données utilisateurs via des formulaires<br>
+                        Gérer les événements utilisateurs</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>Configurer la navigation avec React Router<br>
+                        Initialiser une application avec Create React App<br>
+                        Créer l'interface web avec des composants React</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h3>Node JS</h3>
+                    <p>Stocker les données en toute sécurité<br>
+                        Concevoir un modèle de données conforme<br>
+                        Implémenter des opérations CRUD sécurisées</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="section-title portfolio-title">Portfolio</h2>
+                <div class="section-gallery">
+                    <a class="first-project">
+                        <figure>
+                            <img src="./assets/images/website_nina-carducci.png" alt="Elephant at sunset" /> 
+                            <figcaption>Sophie Bluel<br> </figcaption>
+                        </figure>
+                    </a>
+                    <a class="second-project" href="https://mariaamgo.github.io/OpenclassroomsProjet2/">
+                        <figure>
+                            <img src="./assets/images/website_booki.png" alt="Elephant at sunset" />
+                            <figcaption>Booki<br></figcaption>
+                        </figure>
+                    </a>
+                    <a class="third-project" href="https://mariaamgo.github.io/OpenclassroomsProjet5/">
+                        <figure>
+                            <img src="./assets/images/website_sophie-bluel.png" alt="Elephant at sunset" /> 
+                            <figcaption>Nina Carducci <br> </figcaption>
+                        </figure>
+                    </a>
+                    <a class="fourth-project">
+                        <figure>
+                            <img src="./assets/images/website_nina-carducci.png" alt="Elephant at sunset" />
+                            <figcaption>Kasa <br></figcaption>
+                        </figure>
+                    </a>
+                    <a class="fifth-project">
+                        <figure>
+                            <img src="./assets/images/website_nina-carducci.png" alt="Elephant at sunset" />
+                            <figcaption>Mon Vieux Grimoire <br></figcaption>
+                        </figure>
+                    </a>
+                </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="section-title contact-title">Contactez-moi</h2>
+            <form action="#" method="post">
+				<label for="name">Nom</label>
+				<input type="text" name="name" id="name" placeholder="Nom">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="E-mail">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+				<input type="submit" value="Envoyer">
+			</form>
+        </section>
+    </main>
+
+</body>
+
+</html>
